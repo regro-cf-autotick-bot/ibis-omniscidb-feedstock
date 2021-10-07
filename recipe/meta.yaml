@@ -21,13 +21,12 @@ requirements:
   run:
     - python >=3.8
     - ibis-framework >=1.4
-    - numba <0.54
     - pyarrow
     - pandas
     - pyomnisci >=0.27.0
     - pyomniscidb >=5.5.2
     - rbc >=0.4.0
-    - sqlalchemy <1.4
+    - sqlalchemy
 
 
 test:
