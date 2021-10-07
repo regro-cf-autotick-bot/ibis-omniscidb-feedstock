@@ -30,7 +30,6 @@ requirements:
     - regex
     - rbc >=0.4.0
     - shapely
-    - sqlalchemy
 
 test:
   imports:
