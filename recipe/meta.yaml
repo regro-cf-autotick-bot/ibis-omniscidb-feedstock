@@ -1,5 +1,5 @@
 {% set name = "ibis-omniscidb" %}
-{% set version = "0.2.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6382180a403b5597310be127c137e2f05f0951a951d51e3b3430fbb48761825b
+  sha256: 9d03af2e0b46f88e09ba27f4ae859b26e05bf78fa6ca879791316c2bd5752967
 
 build:
   number: 0
@@ -20,15 +20,16 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - ibis-framework >=1.4
-    - numba <0.54
+    - ibis-framework >=2.0
+    - geopandas
     - pyarrow
     - pandas
     - pyomnisci >=0.27.0
     - pyomniscidb >=5.5.2
+    - python >=3.8
+    - regex
     - rbc >=0.4.0
-    - sqlalchemy <1.4
-
+    - shapely
 
 test:
   imports:
