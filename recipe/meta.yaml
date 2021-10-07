@@ -20,14 +20,17 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - ibis-framework >=1.4
+    - ibis-framework >=2.0
+    - geopandas
     - pyarrow
     - pandas
     - pyomnisci >=0.27.0
     - pyomniscidb >=5.5.2
+    - python >=3.8
+    - regex
     - rbc >=0.4.0
+    - shapely
     - sqlalchemy
-
 
 test:
   imports:
