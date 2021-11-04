@@ -10,7 +10,7 @@ source:
   sha256: b7fc838cc7fb03ebe2137140fbf63df123b9617bdd1d0c2d0fc9f5387dcba26f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - ibis-framework >=2.0
+    - ibis-framework-core >=2.0
     - geopandas
     - pyarrow
     - pandas
