@@ -10,23 +10,22 @@ source:
   sha256: b7fc838cc7fb03ebe2137140fbf63df123b9617bdd1d0c2d0fc9f5387dcba26f
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.7
     - pip
   run:
-    - python >=3.8
+    - python >=3.7
     - ibis-framework-core >=2.0
     - geopandas
     - pyarrow
     - pandas
     - pyomnisci >=0.27.0
     - pyomniscidb >=5.5.2
-    - python >=3.8
     - regex
     - rbc >=0.4.0
     - shapely
