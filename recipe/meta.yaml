@@ -1,5 +1,5 @@
 {% set name = "ibis-omniscidb" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b7fc838cc7fb03ebe2137140fbf63df123b9617bdd1d0c2d0fc9f5387dcba26f
+  sha256: 55936b44d1bc0c36fc2e16e8139ab6b4a30dcf5a83ae81fa9ba356f784738de2
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -24,7 +24,7 @@ requirements:
     - geopandas
     - pyarrow
     - pandas
-    - pyomnisci >=0.27.0
+    - pyomnisci >=0.28.1
     - pyomniscidb >=5.5.2
     - regex
     - rbc >=0.4.0
