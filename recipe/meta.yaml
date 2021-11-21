@@ -10,7 +10,7 @@ source:
   sha256: ed5ea6a84613b6f4b6ddf70a47a9e20a1dd39cca7fc55b47775e0abd4860bdac
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -18,6 +18,9 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - setuptools
+    - setuptools-scm
+    - wheel
   run:
     - python >=3.7
     - ibis-framework-core >=2.0
