@@ -1,5 +1,5 @@
 {% set name = "ibis-omniscidb" %}
-{% set version = "2.0.4" %}
+{% set version = "2.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ed5ea6a84613b6f4b6ddf70a47a9e20a1dd39cca7fc55b47775e0abd4860bdac
+  sha256: b16b1d0a5186c2e7d7d423790cb0bafb8d0ee591473f0ecb914f295cd944dc7b
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
