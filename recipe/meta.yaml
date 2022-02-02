@@ -10,7 +10,7 @@ source:
   sha256: b16b1d0a5186c2e7d7d423790cb0bafb8d0ee591473f0ecb914f295cd944dc7b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -23,7 +23,7 @@ requirements:
     - wheel
   run:
     - python >=3.7
-    - ibis-framework-core ==2.0
+    - ibis-framework-core >2.0
     - geopandas
     - pyarrow
     - pandas
